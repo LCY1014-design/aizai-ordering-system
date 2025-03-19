@@ -1,0 +1,113 @@
+/* 基本設定 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faf5e6; /* 淺米色背景 */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 頂部 Logo 區塊 */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #6b8e23; /* 綠色點綴 */
+  color: white;
+}
+
+header img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* 表單樣式 */
+form, .orders, .login-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+select, input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* 按鈕樣式 */
+button {
+  background-color: #6b8e23; /* 綠色 */
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #556b2f; /* 深一點的綠色 */
+}
+
+/* 訂單項目樣式 */
+.order-item {
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0;
+}
+
+.complete-btn {
+  background-color: #ff6b6b; /* 紅色 */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.complete-btn:hover {
+  background-color: #ff4c4c; /* 深紅色 */
+}
+
+/* 底部樣式 */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #6b8e23;
+  color: white;
+}
+
+/* 響應式設計（手機友善） */
+@media (max-width: 480px) {
+  form, .login-form {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

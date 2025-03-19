@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>點餐系統</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>點餐系統</h1>
+  </header>
+
+  <div id="app"></div>
+
+  <footer>
+    <p>聯絡方式: example@example.com</p>
+    <p>&copy; 2025 點餐系統製作人：Your Name</p>
+  </footer>
+
+  <!-- ✅ 放在這裡！ -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyD2n-hGGWwscDXIRj__VfDqYZPfFDUf9SI",
+      authDomain: "aizai-order-system.firebaseapp.com",
+      projectId: "aizai-order-system",
+      storageBucket: "aizai-order-system.firebasestorage.app",
+      messagingSenderId: "814544720517",
+      appId: "1:814544720517:web:1653be68f3e02b98880fec",
+      measurementId: "G-H2HM2HCB80"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <!-- 🔥 引入 main.js -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
