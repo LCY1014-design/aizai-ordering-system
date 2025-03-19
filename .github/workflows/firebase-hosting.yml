@@ -1,0 +1,28 @@
+name: Deploy to Firebase Hosting on push
+
+on:
+  push:
+    branches:
+      - main # 這裡指定 main 分支時自動部署
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 20
+
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools
+
+    - name: Authenticate with Firebase
+      run: firebase login:ci --token ${{ secrets.FIREBASE_TOKEN }}
+
+    - name: Deploy to Firebase
+      run: firebase deploy --only hosting
